@@ -1,0 +1,10 @@
+<div class="page-header">
+	<h1><?php echo $this->translate('User details'); ?></h1>
+</div>
+<div class="container">
+<div class="row">
+<div style="float:left; padding-right:16px;"><?php echo $this->gravatar($this->zfcUserIdentity()->getEmail()) ?></div>
+<h3><?php echo $this->translate('Hello'); ?>, <?php echo $this->zfcUserDisplayName() ?>!</h3>
+<a href="<?php echo $this->url('zfcuser/logout') ?>">[<?php echo $this->translate('Sign Out'); ?>]</a>
+</div>
+</div>
